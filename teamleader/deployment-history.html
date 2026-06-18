@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/teamleader.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment History | Team Leader | CKL Construction</title>
+    <link rel="icon" type="image/x-icon" href="CKL-1.PNG">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header"><h2>CKL HRMS</h2><p>Construction Services</p></div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="dashboard.php"><span></span> <span>Dashboard</span></a></li>
+            <li class="nav-item"><a href="attendance-history.html"><span></span> <span>My Attendance</span></a></li>
+            <li class="nav-item"><a href="for-validation.html"><span></span> <span>For Validation</span></a></li>
+            <li class="nav-item active"><a href="deployment-history.html"><span></span> <span>Past Deployments</span></a></li>
+            <li class="nav-item"><a href="file-leave.html"><span></span> <span>File a Leave</span></a></li>
+            <li class="nav-item"><a href="payslips.html"><span></span> <span>My Payslips</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="top-bar">
+            <div class="page-title">Deployment History (Team Alpha)</div>
+            <div class="user-info">
+                <span>Team Leader (Alpha)</span>
+                <a href="../index.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="panel">
+                <h2>Completed Deployments – Full History</h2>
+                <div style="overflow-x: auto;">
+                    <table id="historyTable">
+                        <thead>
+                            <tr>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Project</th>
+                                <th>Location</th>
+                                <th>Work Done</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="../js/utils.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/deployment-history.js"></script>
+</body>
+</html>
